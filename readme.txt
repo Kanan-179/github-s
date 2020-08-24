@@ -1,2 +1,1 @@
-salam
-xzczx
+salamlar her kese,
