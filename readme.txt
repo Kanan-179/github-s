@@ -1,2 +1,0 @@
-salamlar her kese,
-katex
