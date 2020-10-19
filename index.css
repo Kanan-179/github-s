@@ -1,0 +1,247 @@
+body {
+  font-family: "Archivo";
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bg {
+  background: url(img/Download-Urban-Night-4K-HD-Original-Wallpaper.jpg);
+  /*  background: gray;*/
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+i {
+  color: black;
+  margin-right: 5px;
+}
+.top-menu {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  z-index: 111111;
+}
+.card {
+  top: 20%;
+  color: white;
+}
+.navbar a {
+  color: black;
+  transition: ease;
+  font-weight: bold;
+}
+.collapse {
+  margin-right: 25px; 
+} 
+.navbar-brand:hover {
+  text-decoration: underline;
+}
+.navbar-toggler-icon {
+  color: white;
+}
+.nav-item {
+  margin-left: 25px;  
+  transition: ease ;  
+} 
+.nav-item:hover { 
+  text-shadow: 3px 3px 20px midnightblue;
+  color: midnightblue;
+  transform: scale(1.05, 1.05)
+}
+.nav-item:hover .fa{  
+  color: midnightblue;  
+}
+.blur1 {
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: 0.5s; 
+}
+.blur1:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+.blur2 {
+  background-color: rgba(0, 0, 0, 0.4);
+      transition: 0.5s;
+}
+.blur2:hover {
+  background-color: rgba(0, 0, 0, .7);
+}
+
+.tbg1 {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.container1 {
+  position: relative;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.btn{
+    	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+
+}
+.btn:hover {
+	background-color: rgba(255,255,255,1);
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;	
+    color: black;
+    border: none;
+}
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container1:hover img {
+  opacity: 0.8;
+  transform: scale(0.950);
+  box-shadow: 1px 2px 20px #000;
+}
+
+.container1:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 22px; 
+}
+button .fas {
+  font-size: 4rem;
+  padding: 5px;
+  margin: 5px;
+}
+.col-xl-2 button,
+.fas {
+  transition: all 0.3s ; 
+    letter-spacing: 1px;
+}
+.col-xl-2:hover button{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .8);
+}  
+ 
+ul li i {
+  color: white;
+}
+ul li a {
+  color: white;
+}
+ul li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.footerimg {
+  transition: .5s;
+    padding: 2px;
+    background: white;
+    border-radius: 5px
+}
+.footerimg:hover {
+  box-shadow: 1px 1px 50px rgba(255, 255, 255, 0.4);
+  background: white;
+  border-radius: 30px;
+}
+li:hover .footerimg{
+  box-shadow: 1px 1px 50px rgba(255, 255, 255, 0.4);
+  background: white;
+  border-radius: 30px;
+} 
+li .mb-3 :hover{
+    color: red;
+}
+.container1 img {
+  padding: 25px;
+}
+.fa-arrow-down {
+  background: rgba(0, 0, 0, 0.1); 
+  margin: 5px auto;
+  color: white;
+  font-size: 15px;
+}
+.keydown .fa-mouse {
+  display: block;
+  margin: 275px auto;
+  top: 75%;
+  font-size: 25px;
+  background: rgba(0, 0, 0, 0.6); 
+  padding: 4px;
+  border-radius: 15px;
+  color: white;
+  position: relative;
+  animation-name: animation1;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes animation1 {
+  0% {
+    top: -10px;
+  }
+  100% {
+    top: 10px;
+  }
+}
+ 
+.carousel-control-prev:hover .carousel-control-prev-icon{
+    box-shadow: 10px 0px 35px 10px rgba(0, 0, 0, .8);
+}
+.carousel-control-next:hover .carousel-control-next-icon{
+    box-shadow: -10px 0px 35px 10px rgba(0, 0, 0, .8);
+}
+
+@media screen and (max-width: 770px) { 
+    .navbar-nav{
+        text-align: center;
+        font-size: 15px;
+    }
+    .nav-item{
+        margin-bottom: 15px;
+    }
+    .fa{
+        padding: 5px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .keydown{
+        display: none
+    }
+    .navbar-nav{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 275px) {
+    .banner{
+        height: 70vh;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .middle{ 
+        padding: 0;
+        margin: 0;
+        height: auto;
+        display: inline-block
+    }
+ 
+
+}

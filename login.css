@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Archivo";
+}
+body {
+  background-image: url(img/57bb66cb4895565d755910654a6b0c80.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; 
+}
+
+/* Full-width input fields */
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="tel"],
+select{
+  width: 85%;
+  padding: 8px 10px;  
+  display: block; 
+  box-sizing: border-box; 
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+}
+/* Set a style for all buttons */
+button {
+  opacity: 0.9;
+}
+button:hover {
+  opacity: 1;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+input:active{
+    border: none
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: 75px;
+  display: inline-block;
+  /*  background-color: #f44336;*/
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 10px;
+  position: relative;
+}
+
+img.avatar {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+}
+
+span.psw {
+  float: right;
+  display: inline-block;
+}
+
+/* The Modal (background) */
+.modal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  /*  width: 75%;  Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 2% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+.modal-content2 {
+  background-color: #fefefe;
+  margin: 70% auto 5% auto;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+label {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+/*  border-bottom: 1px solid midnightblue;*/
+  color: midnightblue;
+}
+.btns {
+  margin-top: 10%;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    padding-right: 50px;
+  }
+}
+.card-header{
+    text-transform: uppercase;
+    font-weight: bold
+}
+#btn1, #btn2{
+    height: 25vh; 
+    color: #4cc9f0;
+    transition: all ease .5s;
+    font-size: 25px;
+    text-transform: uppercase ;
+    opacity: .7
+}
+#btn1:hover, #btn2:hover {
+  color: white; 
+  text-shadow: 10px 10px 25px 6px rgba(255,255,255,1);
+  opacity: 1; 
+}
+
+.one:hover {
+  background-color: #4cc9f0;
+  -webkit-box-shadow: 10px 10px 50px 6px rgba(76,201,240,1);
+  -moz-box-shadow: 10px 10px 50px 6px rgba(76,201,240,1);
+  box-shadow: 10px 10px 50px 6px rgba(76,201,240,1);
+}
+
+.three:hover {
+  background-color: #b9e769;
+  -webkit-box-shadow: 10px 10px 50px 6px rgba(105, 231, 5, 1);
+  -moz-box-shadow: 10px 10px 50px 6px rgba(105, 231, 5, 1);
+  box-shadow: 10px 10px 50px 6px rgba(105, 231, 5, 1 );
+}
+
+ 

@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href='https://fonts.googleapis.com/css?family=Archivo' rel='stylesheet'>
+    <link rel="stylesheet" href="login.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>BS, Login</title>
+  </head>
+  <body >
+ 
+ 
+<div class="d-flex btns  mx-3 align-items-center">
+  <div class="p-2 w-50">
+     <button class="btn btn-primary w-100 one " id='btn1'><b>Login</b></button>  
+  </div> 
+   
+    <div class="m-auto d-block p-2 ">
+     <div class="card text-center">
+  <div class="card-header">
+    Login and sign up page
+  </div>
+  <div class="card-body ">
+    <h5 class="card-title">Enter your name, lastname, and etc.</h5>
+    <p class="card-text  m-5 d-block m-auto">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    <a href="#" class="btn btn-warning text-light mt-3">Login, sign up</a>
+  </div>
+  <div class="card-footer text-muted">
+    made with HTML, CSS, Bootstrap 4, jQuery
+  </div>
+</div> 
+  </div>
+  
+  <div class=" p-2   w-50">
+      <button class="btn btn-success w-100 three" id='btn2'><b>Signup</b></button>
+  </div>
+</div>
+
+
+
+
+  <!--                     LOGIN                        -->
+<div id="id01" class="modal container mt-5">
+  
+  <form class="modal-content animate col-9" action="#" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close ml-5" style="color: red; font-size: 30px;" title="Close">&times;</span> 
+      <i class="fa fa-user border text-primary rounded-circle p-3" style="font-size: 80px;" ></i>
+    </div>
+
+    <div class="container p-2 mb-2 bg-light">
+    
+    <div class="form-group col-12 col-md-6 float-left">
+          <label for="uname" id="uname"  class="ml-3"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required class="form-control">
+    </div>
+      
+    <div class="form-group col-12 col-md-6 float-left">
+          <label for="psw" class="ml-3"><b>Password</b></label>
+          <input type="password" id="pssw" placeholder="Enter Password" name="psw" required class="form-control">
+    </div> 
+            
+      <button type="submit" id="submit" class="btn btn-success float-right my-3 mr-5 w-25 text-center  rounded">Login</button>
+      <label class="mt-3 p-2 mr-3 float-right d-inline-block">
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container my-2 p-1 bg-light rounded" > 
+      <a href="#"><span class="psw  p-1   mr-5">Forgot password</span></a>
+    </div>
+  </form>
+
+</div>
+
+
+
+ <!--                     SIGNUP                         -->
+<div id="id02" class="modal container">
+  
+  <form class="modal-content  animate col-9" action="#" method="post">
+    <div class="imgcontainer  rounded">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close mr-3 mt-1" style="color: red; font-size: 30px;" title="Close">&times;
+      </span>  
+      <label for="registerform"><b style="font-size: 25px">Register Form</b></label>
+    </div>
+
+    <div class="container rounded p-0 border bg-light">
+       
+      <div class="form-group col-12 col-md-6 float-left">
+          <label for="fname" id="fname"  class="ml-3"><b>Firstname</b></label>
+          <input type="text" placeholder="Enter Firstname" name="fname" required class="form-control form-control-sm ">
+      </div> 
+         
+      <div class="form-group col-12 col-md-6 float-left">
+          <label for="lname" id="lname"  class="ml-3"><b>Lastname</b></label>
+          <input type="text" placeholder="Enter Lastname" name="lname" required class="form-control form-control-sm">
+      </div>
+      
+      <div class="form-group col-12 col-md-6 float-left">
+          <label for="email"   class="ml-3"><b>E-mail</b></label>
+          <input type="text" placeholder="Enter email" name="email" id="email" required class="form-control form-control-sm">
+      </div> 
+       
+      <div class="form-group col-12 col-md-6 float-left">   
+        <label for="date" class="ml-3"><b>Date</b></label>
+        <input class="form-control form-control-sm" type="date" value="2011-08-19" id="example-date-input">
+      </div>
+      
+      <div class="form-group col-5 col-md-3 float-left">
+          <label for="rpsw" class="ml-2"><b>Prefix</b></label>
+          <input type="tel" id="rpssw" placeholder="Enter phone number" value="+994" name="telnumber" required class="form-control form-control-sm" disabled>
+      </div>      
+      
+     <div class="form-group col-5 col-md-3 float-left">         
+          <label class="ml-2" for="inlineFormCustomSelect"><b>Code</b></label>
+          <select class="custom-select form-control form-control-md"> 
+            <option value="1">50</option>
+            <option value="2">51</option>
+            <option value="3">55</option>
+            <option value="4">70</option>
+            <option value="5">77</option>
+          </select>
+      </div>       
+      
+      <div class="form-group col-12 col-md-6 float-left">
+          <label for="rpsw" class="ml-3"><b>Phone number</b></label>
+          <input type="tel" id="rpssw" placeholder="Enter phone number" value="555-55-55" name="telnumber" required class="form-control form-control-sm">
+      </div>
+
+      <div class="form-group col-12 col-md-6 float-left">
+          <label for="psw" class="ml-3"><b>Password</b></label>
+          <input type="password" id="pssw" placeholder="Enter Password" name="psw" required class="form-control form-control-sm">
+      </div>
+              
+      <div class="form-group col-12 col-md-6 float-left">
+          <label for="rpsw" class="ml-3"><b>rePassword</b></label>
+          <input type="password" id="rpssw" placeholder="Enter rePassword" name="epsw" required class="form-control form-control-sm">
+      </div>
+      
+<!--
+      <div class="form-group col-8   float-left">
+      <label>
+        <input type="checkbox"  name="showpsw" id="showpsw"> Show Password
+      </label>
+      </div>       
+-->
+           
+
+            
+    </div>
+
+    <div class="container   mb-5">
+      <div class="modal-footer">
+        <button type="button" id="signupclose" class="btn btn-danger  d-block mx-auto col-3" >Close</button>
+        <button type="button" class="btn btn-success  d-block mx-auto col-3">Sign up</button>
+      </div>
+    </div>
+  </form>
+
+</div>
+  
+
+<script> 
+var modal = document.getElementById('id01');
+var modal2 = document.getElementById('id02');
+ 
+window.onclick = function(event) {
+    if (event.target == modal ) {
+        modal.style.display = "none";  
+    } 
+    if (event.target == modal2 ) {
+        modal2.style.display = "none";  
+    }
+}
+ 
+ 
+</script>
+ 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="login.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
