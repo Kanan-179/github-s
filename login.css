@@ -69,7 +69,7 @@ span.psw {
   top: 0;
   /*  width: 75%;  Full width */
   height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
+  overflow-y: scroll; /* Enable scroll if needed */
 }
 
 /* Modal Content/Box */
