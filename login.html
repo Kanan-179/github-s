@@ -12,34 +12,56 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>BS, Login</title>
   </head>
-  <body >
+  <body class="slide-in-blurred-top">
+
+ <div class="container-fluid ">
+     <div class="row">
+                 <div class="col">
+                
+            <nav class="navbar ">
+                <a href="index.html" class="navbar-brand blur1 d-block m-auto rounded   p-2">
+                
+                    <img src="img/brandlogo.png" width="100" height="100" class=" rounded-circle" alt="">
+                
+                </a>
+            </nav>
+        </div>
+     </div>
+ </div> 
  
- 
-<div class="d-flex btns  mx-3 align-items-center">
+<div class="d-flex btns   align-items-center ">
+ <!--    LOGIN BUTTON  -->
   <div class="p-2 w-50">
      <button class="btn btn-primary w-100 one " id='btn1'><b>Login</b></button>  
   </div> 
-   
+<!--    /LOGIN BUTTON  -->
+  
+   <!--    CARD  -->
     <div class="m-auto d-block p-2 ">
      <div class="card text-center">
-  <div class="card-header">
-    Login and sign up page
+          <div class="card-header">
+            Login and sign up page
+          </div>
+              <div class="card-body ">
+                <h5 class="card-title">Enter your name, lastname, and etc.</h5>
+                <p class="card-text  m-5 d-block m-auto">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <a href="#" class="btn btn-warning text-light mt-3">Login, sign up</a>
+              </div>
+          <div class="card-footer text-muted">
+            made with HTML, CSS, Bootstrap 4, jQuery
+          </div>
+    </div> 
   </div>
-  <div class="card-body ">
-    <h5 class="card-title">Enter your name, lastname, and etc.</h5>
-    <p class="card-text  m-5 d-block m-auto">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-    <a href="#" class="btn btn-warning text-light mt-3">Login, sign up</a>
-  </div>
-  <div class="card-footer text-muted">
-    made with HTML, CSS, Bootstrap 4, jQuery
-  </div>
-</div> 
-  </div>
+   <!--    /CARD  -->
+
   
-  <div class=" p-2   w-50">
+<!--    SIGNUP BUTTON  -->
+  <div class="p-2 w-50">
       <button class="btn btn-success w-100 three" id='btn2'><b>Signup</b></button>
   </div>
+<!--    /SIGNUP BUTTON  -->
+  
 </div>
 
 
@@ -50,30 +72,34 @@
   
   <form class="modal-content animate col-9" action="#" method="post">
     <div class="imgcontainer">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close ml-5" style="color: red; font-size: 30px;" title="Close">&times;</span> 
-      <i class="fa fa-user border text-primary rounded-circle p-3" style="font-size: 80px;" ></i>
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" style="color: red; font-size: 30px;" title="Close">&times;
+      </span> 
+      
+      <i class="fa fa-user border text-primary  border-0 m-auto d-block" style="font-size: 80px;" ></i>
     </div>
 
     <div class="container p-2 mb-2 bg-light">
     
     <div class="form-group col-12 col-md-6 float-left">
           <label for="uname" id="uname"  class="ml-3"><b>Username</b></label>
-          <input type="text" placeholder="Enter Username" name="uname" required class="form-control">
+          <input type="text" placeholder="Enter Username" name="uname" required class="form-control w-100">
     </div>
       
     <div class="form-group col-12 col-md-6 float-left">
           <label for="psw" class="ml-3"><b>Password</b></label>
-          <input type="password" id="pssw" placeholder="Enter Password" name="psw" required class="form-control">
+          <input type="password" id="pssw" placeholder="Enter Password" name="psw" required class="form-control w-100">
     </div> 
             
-      <button type="submit" id="submit" class="btn btn-success float-right my-3 mr-5 w-25 text-center  rounded">Login</button>
-      <label class="mt-3 p-2 mr-3 float-right d-inline-block">
+      <button type="submit" id="submit" class="btn btn-sm btn-success float-right my-3 mr-5 w-25 text-center col-4 rounded">Login</button>
+      <span class="mt-3 p-2 mr-3 float-right d-inline-block">
         <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
+      </span>
     </div>
 
-    <div class="container my-2 p-1 bg-light rounded" > 
-      <a href="#"><span class="psw  p-1   mr-5">Forgot password</span></a>
+    <div class="container my-2 p-1 bg-light rounded border-bottom" > 
+          <a href="#">
+              <span class="psw  p-1  mr-5">Forgot password</span>
+          </a>
     </div>
   </form>
 
@@ -82,27 +108,34 @@
 
 
  <!--                     SIGNUP                         -->
-<div id="id02" class="modal container"> 
-      <form class="modal-content  animate col-9" action="#" method="post" style="overflow-y: scroll; max-height:90%;  margin-top: 20px; margin-bottom:20px;">
-    <div class="imgcontainer  rounded">
-      <span onclick="document.getElementById('id02').style.display='none'" class="close mr-3 mt-1" style="color: red; font-size: 30px;" title="Close">&times;
-      </span>  
-      <label for="registerform"><b style="font-size: 25px">Register Form</b></label>
-    </div>
+<div id="id02" class="modal container p-0 "> 
+<form class="modal-content  animate col-9" action="#" method="post" style="overflow-y: scroll; max-height:90%;  ">
+<!--       IMG CONTAINER     -->
+    <div class="imgcontainer  rounded bg-light">
+          <span onclick="document.getElementById('id02').style.display='none'" class="close mr-3 mt-1" style="color: red; font-size: 30px;" title="Close">&times;
+          </span>  
 
-    <div class="container rounded p-0 border bg-light">
+
+          <i class="fa fa-user-plus   text-primary ml-2 p-3" style="font-size: 50px;" ></i>
+
+          <label for="registerform" class="h4  text-primary mt-4">Register Form</label>
+        </div>
+<!--       /IMG CONTAINER     -->
+
+<!--       SIGNUP BODY     -->
+    <div class="container">
        
-      <div class="form-group col-12 col-md-6 float-left">
+      <div class="form-group col-12 col-md-6 float-left m-auto">
           <label for="fname" id="fname"  class="ml-3"><b>Firstname</b></label>
-          <input type="text" placeholder="Enter Firstname" name="fname" required class="form-control form-control-sm ">
+          <input type="text" placeholder="Enter Firstname" name="fname" required class="form-control form-control-sm">
       </div> 
          
-      <div class="form-group col-12 col-md-6 float-left">
+      <div class="form-group col-12 col-md-6 float-left ">
           <label for="lname" id="lname"  class="ml-3"><b>Lastname</b></label>
           <input type="text" placeholder="Enter Lastname" name="lname" required class="form-control form-control-sm">
       </div>
       
-      <div class="form-group col-12 col-md-6 float-left">
+      <div class="form-group col-12 col-md-6 float-left m-auto">
           <label for="email"   class="ml-3"><b>E-mail</b></label>
           <input type="text" placeholder="Enter email" name="email" id="email" required class="form-control form-control-sm">
       </div> 
@@ -112,21 +145,22 @@
         <input class="form-control form-control-sm" type="date" value="2011-08-19" id="example-date-input">
       </div>
       
-      <div class="form-group col-5 col-md-3 float-left">
+      
+      <div class="form-group col-6 col-md-3 float-left m-auto">
           <label for="rpsw" class="ml-2"><b>Prefix</b></label>
-          <input type="tel" id="rpssw" placeholder="Enter phone number" value="+994" name="telnumber" required class="form-control form-control-sm" disabled>
+          <input type="tel" id="rpssw" placeholder="Enter phone number" value="+994" name="telnumber" required class="form-control form-control-sm w-75" disabled>
       </div>      
       
-     <div class="form-group col-5 col-md-3 float-left">         
+     <div class="form-group  col-6 col-md-3 float-left m-auto">         
           <label class="ml-2" for="inlineFormCustomSelect"><b>Code</b></label>
-          <select class="custom-select form-control form-control-md"> 
+          <select class="custom-select form-control "> 
             <option value="1">50</option>
             <option value="2">51</option>
             <option value="3">55</option>
             <option value="4">70</option>
             <option value="5">77</option>
           </select>
-      </div>       
+      </div>      
       
       <div class="form-group col-12 col-md-6 float-left">
           <label for="rpsw" class="ml-3"><b>Phone number</b></label>
@@ -147,13 +181,17 @@
 
             
     </div>
+<!--       /SIGNUP BODY     -->
 
-    <div class="container   mb-5">
+<!--       FOOTER     -->
+    <div class="container mt-3">
       <div class="modal-footer">
-        <button type="button" id="signupclose" class="btn btn-sm btn-danger  d-block mx-auto col-3" >Close</button>
-        <button type="button" class="btn btn-md btn-success  d-block mx-auto col-5">Sign up</button>
+        <button type="button" id="signupclose" class="btn btn-sm btn-danger  d-block mx-auto" >Close</button>
+        <button type="button" class="btn btn-md btn-success  d-block mx-auto ">Sign up</button>
       </div>
     </div>
+<!--       /FOOTER     -->
+    
   </form>
  
 </div>
